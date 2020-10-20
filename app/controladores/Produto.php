@@ -102,5 +102,32 @@
 
        }
 
+        public function busca(){
+           
+           $busca = trim($_POST['busca']);
+           $busca = $this->produto->busca($busca);
 
-    }
+           $datos = [
+               'busca' => $busca
+           ];
+           
+           $this->vista('produto/busca', $datos);
+
+            
+
+
+            }
+            
+        
+
+
+
+
+   
+            
+
+
+
+
+
+ }
