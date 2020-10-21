@@ -34,7 +34,7 @@ function cat(){
 
 
 function deletar(){
-     var ok = confirm("desja realmente deletar??");
+     var ok = confirm("deseja realmente deletar??");
      if (ok) {
          return true;   
      } else {

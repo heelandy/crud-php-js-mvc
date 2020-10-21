@@ -13,12 +13,14 @@
   <tbody>
   <?php foreach($datos['busca'] as $busca) :?>
       <tr>
-         <th><?php echo $busca->idpro ;?></th>
-        <th><?php  echo $busca->idcat ;?></th>   
+         <th><?php echo $busca->idpro;?></th>
+         <th><?php  echo $busca->idcat;?></th>   
          <th><?php echo $busca->data_cadastro;?></th> 
-         <th><?php echo $busca->nome_produto ;?></th>        
-         <th><?php echo $busca->valor_produto ;?></th> 
+         <th><?php echo $busca->nome_produto;?></th>        
+         <th><?php echo $busca->valor_produto;?></th> 
+         </tr>
+     <?php endforeach;?>
     </tbody>
   </table>
-  <?php endforeach;?>
+  
 <?php require RUTA_APP . '/vistas/inc/footer.php';?>

@@ -62,11 +62,11 @@
     }
 
     public function busca($busca){
-      //  $busca = '%android%';
-        $this->db->query('SELECT * FROM produto WHERE nome_produto LIKE :busca');
+        //$busca = '%t%';
+        $this->db->query('SELECT * FROM produto WHERE nome_produto LIKE  :busca');
         $this->db->bind(':busca', $busca);
         $row = $this->db->registros();
-        var_dump($row); die();
+        //var_dump($row); die();
         return $row;
     }
 
