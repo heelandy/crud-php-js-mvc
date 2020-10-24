@@ -8,6 +8,7 @@
               <th>Data</th>
               <th>Nome</th>
               <th>Valor</th>
+              <th>Acciones</th>
           </tr>
       </thead>
   <tbody>
@@ -18,10 +19,10 @@
          <th><?php echo $produto->data_cadastro;?></th> 
          <th><?php echo $produto->nome_produto ;?></th>        
          <th><?php echo $produto->valor_produto ;?></th>        
-         <th><a href="<?php RUTA_URL;?>produto/edit/<?php echo $produto->idpro ; ?>" class="btn btn-warning"> Update</a></th>
+         <th><a href="<?php RUTA_URL;?>produto/edit/<?php echo $produto->idpro ; ?>" class="btn btn-warning"><i class="fa fa-pencil" aria-hidden="true"></i> Update</a></th>
          <th>
             <form action="<?php RUTA_URL;?>produto/delete/<?php echo $produto->idpro;?>" method="POST"  >
-               <input type="submit" value="Apagar" onclick="return deletar()" class="btn btn-danger">
+            <i class="fa fa-trash" aria-hidden="true"></i>  <input type="submit" value="Apagar" onclick="return deletar()" class="btn btn-danger">
              </form>
             </th>
 

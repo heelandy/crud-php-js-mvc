@@ -36,7 +36,18 @@
            </div>
            <div class="form-group">
            <label for="idcastro">ID Cadastor:</label>
-           <input type="number" name="idcat" value="" class="form-control form-control-lg">
+           
+            <select name="idcat" class="form-control form-control-lg">
+            <option value="" >Selectione uma Categoria</option>
+            <?php foreach($datos['test'] as $categori) :?>
+            
+            <option value="<?php echo $categori->idcat ;?>"><?php echo $categori->nomecat ;?></option>
+
+            <?php endforeach ;?>
+            
+            </select>
+
+           
            </div>
            <input type="submit" onclick = return valid() value="Addicionar" class="btn btn-success">
      </form>
