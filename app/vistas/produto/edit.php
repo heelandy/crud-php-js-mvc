@@ -1,3 +1,8 @@
+<?php 
+      session_start(); 
+      if (!$_SESSION['iduser'] ) {
+            redirect('paginas/login');
+      };?>
 <?php require RUTA_APP . '/vistas/inc/header.php'; ?>
 <div class="car card-body bg-light mt-5">
       <h2>Editar Produto</h2><span>Addicione o produto confrome o ID da Categoria</span>

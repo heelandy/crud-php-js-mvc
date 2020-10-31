@@ -1,23 +1,9 @@
+<?php 
+      session_start(); 
+      if (!$_SESSION['iduser'] ) {
+            redirect('paginas/login');
+      };?>
 <?php require RUTA_APP . '/vistas/inc/header.php'; ?>
-
-<table class="table">
-  <thead>
-            <tr>
-                <th>ID</th>
-                <th>Categoria</th>
-            </tr>
-        </thead>
-    <tbody>
-    <?php foreach($datos['test'] as $categori) :?>
-        <tr>
-           <th><?php echo $categori->idcat ;?></th>
-           <th><?php echo $categori->nomecat ;?></th>     
-        </tr>
-        <?php endforeach ;?>
-        <th><a href=" <?php echo RUTA_URL;?>categoria" class="btn btn-primary">Pagina Categoria</a></th>  
-    </tbody>
-  </table>
-  
 
 <div class="car card-body bg-light mt-5">
       <h2>Cadasto de Produto</h2><span>Addicione o produto confrome o ID da Categoria</span>

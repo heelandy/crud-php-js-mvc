@@ -1,4 +1,4 @@
 <?php   
     function redirect($page){
-        header('location:' . RUTA_URL . $page);
+        header('location:' . RUTA_URL . $page .'.php');
     }

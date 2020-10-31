@@ -1,3 +1,8 @@
+<?php 
+      session_start(); 
+      if (!$_SESSION['iduser'] ) {
+            redirect('paginas/login');
+      };?>
 <?php require RUTA_APP . '/vistas/inc/header.php'; ?>
 
 <div class="car card-body bg-light mt-5">
