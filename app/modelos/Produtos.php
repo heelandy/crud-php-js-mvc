@@ -30,10 +30,10 @@
     public function actualizar($datos){
         $this->db->query('UPDATE produto SET nome_produto = :nome_produto, valor_produto = :valor_produto, data_cadastro = :data_cadastro, idcat = :idcat WHERE idpro = :idpro');
         $this->db->bind(':nome_produto', $datos['nome_produto']);
-        $this->db->bind('valor_produto', $datos['valor_produto']);
-        $this->db->bind('data_cadastro', $datos['data_cadastro']);
-        $this->db->bind('idpro', $datos['idpro']);
-        $this->db->bind('idcat', $datos['idcat']);
+        $this->db->bind(':valor_produto', $datos['valor_produto']);
+        $this->db->bind(':data_cadastro', $datos['data_cadastro']);
+        $this->db->bind(':idpro', $datos['idpro']);
+        $this->db->bind(':idcat', $datos['idcat']);
         if ($this->db->execute()) {
             return true;
         } else {
@@ -63,7 +63,7 @@
 
     public function busca($busca){
         //$busca = '%t%';
-        $this->db->query('SELECT * FROM produto WHERE nome_produto LIKE  :busca');
+        $this->db->query('SELECT * FROM produto WHERE nome_produto LIKE :busca');
         $this->db->bind(':busca', $busca);
         $row = $this->db->registros();
         //var_dump($row); die();

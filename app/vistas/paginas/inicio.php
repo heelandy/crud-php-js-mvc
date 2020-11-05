@@ -1,11 +1,11 @@
-<?php 
-      session_start(); 
-      if (!$_SESSION['iduser'] ) {
-            redirect('paginas/login');
-      };?>
-<?php require RUTA_APP . '/vistas/inc/header.php'; ?>
 
+<?php require RUTA_APP . '/vistas/inc/header.php'; ?>
+<?php 
+if (!$_SESSION['iduser']) {
+      redirect('login');
+} ?>
 <div class="car card-body bg-light mt-5">
+
       <h2>Cadasto de Produto</h2><span>Addicione o produto confrome o ID da Categoria</span>
      <form action="<?php echo RUTA_URL;?>produto/add" method="POST" name="f">
            <div class="form-group">

@@ -35,7 +35,7 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0" action="<?php echo RUTA_URL;?>produto/busca" method = "POST">
-      <input class="form-control mr-sm-2"  type="search" name="busca" placeholder="Pesquisar" aria-label="Pesquisar">
+      <input class="form-control mr-sm-2"  type="search" name="busca" placeholder="Pesquisar Produtos" aria-label="Pesquisar">
       <input class="btn btn-outline-success my-2 my-sm-0"  type="submit" value="Pesquisar">
     </form>
   </div>

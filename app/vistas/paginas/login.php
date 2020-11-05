@@ -7,7 +7,7 @@
            <input type="text" name="nome" value=""  class="form-control form-control-lg">
            </div>
            <div class="form-group">
-           <label for="valor">Valor:</label>
+           <label for="senha">Senha</label>
            <input type="text" name="senha" value="" class="form-control form-control-lg">
            </div>
            
