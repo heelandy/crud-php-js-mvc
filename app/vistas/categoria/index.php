@@ -1,7 +1,9 @@
-<?php if (!$_SESSION['iduser']) {
-      redirect('login');
-} ?>
+
  <?php require RUTA_APP . '/vistas/inc/header.php'; ?>
+ <?php session_start();
+ if(!$_SESSION['iduser'] and !$_SESSION['senha']){
+     redirect('login');
+ } ?>
 
     <table class="table">
       <thead>

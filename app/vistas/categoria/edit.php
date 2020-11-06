@@ -1,8 +1,9 @@
-<?php if (!$_SESSION['iduser']) {
-      redirect('login');
-} ?>
-<?php require RUTA_APP . '/vistas/inc/header.php'; ?>
 
+<?php require RUTA_APP . '/vistas/inc/header.php'; ?>
+<?php session_start();
+ if(!$_SESSION['iduser'] and !$_SESSION['senha']){
+     redirect('login');
+ } ?>
 <div class="car card-body bg-light mt-5">
       <h2>Editar Categoria</h2>
      <form action="<?php echo RUTA_URL;?>categoria/edit/<?php echo $datos['idcat'] ;?>" method="POST">

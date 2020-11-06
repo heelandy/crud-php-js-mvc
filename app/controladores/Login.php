@@ -3,6 +3,7 @@
 
         public function __construct(){
             $this->login = $this->modelo('Logi');
+            
         }
 
         public function index(){
@@ -13,6 +14,7 @@
         
         public function log(){
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+                
             $datos = [
                 'nome' => trim($_POST['nome']),
                 'senha' => trim($_POST['senha'])
@@ -20,12 +22,13 @@
             $logn = $this->login->login($datos);
             
             if ($datos['nome'] = $logn->nome && $datos['senha'] =$logn->senha) {
-                session_start();
-                redirect('home');
-              $_SESSION['iduser'] = $logn->iduser;
+              $_SESSION['iduser'] = $logn->nome;
               $_SESSION['senha'] = $logn->senha;
+              redirect('home');
                 
             }else {
+                unset ($_SESSION['iduser']);
+                unset ($_SESSION['senha'] );
                 redirect('login');
             }
         } else {

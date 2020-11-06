@@ -1,9 +1,9 @@
-    <?php if (!$_SESSION['iduser']) {
-        redirect('login');
-    } ?>
-
+  
 <?php require RUTA_APP . '/vistas/inc/header.php'; ?>
-
+<?php session_start();
+ if(!$_SESSION['iduser'] and !$_SESSION['senha']){
+     redirect('login');
+ } ?>
 <table class="table">
 <thead>
           <tr>
@@ -18,7 +18,7 @@
   <?php foreach($datos['busca'] as $busca) :?>
       <tr>
          <th><?php echo $busca->idpro;?></th>
-         <th><?php  echo $busca->idcat;?></th>   
+         <th><?php echo $busca->idcat;?></th>   
          <th><?php echo $busca->data_cadastro;?></th> 
          <th><?php echo $busca->nome_produto;?></th>        
          <th><?php echo $busca->valor_produto;?></th> 

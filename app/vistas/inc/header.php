@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?php echo RUTA_URL;?>/public/css/style.css">
+    <link rel="stylesheet" href="<?php echo RUTA_URL;?>public/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Document</title>
@@ -27,7 +29,7 @@
         <i class="fa fa-plus" aria-hidden="true"></i> Insert
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Categori</a>
+          <a class="dropdown-item" href="<?php echo RUTA_URL;?>categoria/add">Categori</a>
           <a class="dropdown-item" href="#">Produto</a>
           <li class="nav-item active">
         <a class="nav-link" href="<?php echo RUTA_URL?>produto">Produto<span class="sr-only">(produtos)</span></a>

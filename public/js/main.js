@@ -1,17 +1,19 @@
 
 
 function valid(){
-
     var nome = document.f.nome_produto.value;
     var valor = document.f.valor_produto.value;
     var data = document.f.data_cadstro.value;
-    var id  = document.f.idcat.value;
     
-   
-
-    if(nome === '' || valor === '' || data == ''|| id == '' || id < 0){
-     alert('Confere se não tem espacio vazio o ID Cadastro menor que O');
+    if(nome === ""){
+     alert('Confere se não tem espacio vazio');
      return false;
+    }if(valor === ""){
+        alert('Confere se não tem espacio vazio');
+        return false;
+    }if(data === ""){
+        alert('Confere se não tem espacio vazio');
+        return false;
     }else{
         return true;
     }
