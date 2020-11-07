@@ -10,23 +10,23 @@
      <form name="f" action="<?php echo RUTA_URL;?>produto/add" method="POST" >
            <div class="form-group">
            <label for="nome">Nome:</label>
-           <input type="text" name="nome_produto" value=""  class="form-control form-control-lg">
+           <input type="text" name="nome_produto"  class="form-control form-control-lg">
            </div>
 
            <div class="form-group">
            <label for="valor">Valor:</label>
-           <input type="text" name="valor_produto" value="" class="form-control form-control-lg">
+           <input type="text" name="valor_produto"  class="form-control form-control-lg" >
            </div>
 
            <div class="form-group">
            <label for="data">Data:</label> <span>Ex: 2020-01-01 10:10:10</span>
-           <input type="datetime" name="data_cadastro" value="" class="form-control form-control-lg" placeholder="YYYY-MM-DDThh:mm:ss">
+           <input type="datetime" name="data_cadastro"  class="form-control form-control-lg" placeholder="YYYY-MM-DDThh:mm:ss" >
            </div>
 
            <div class="form-group">
            <label for="idcastro">ID Cadastor:</label>
            
-            <select name="idcat" class="form-control form-control-lg">
+            <select name="idcat" class="form-control form-control-lg"  >
             <option value="" >Selectione uma Categoria</option>
             <?php foreach($datos['test'] as $categori) :?>
             
@@ -43,4 +43,10 @@
 
 
 
+
 <?php require RUTA_APP . '/vistas/inc/footer.php'; ?>
+
+
+
+
+

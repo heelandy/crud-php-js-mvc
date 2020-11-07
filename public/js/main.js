@@ -3,16 +3,16 @@
 function valid(){
     var nome = document.f.nome_produto.value;
     var valor = document.f.valor_produto.value;
-    var data = document.f.data_cadstro.value;
+    var data = document.f.data_cadastro.value;
     
     if(nome === ""){
-     alert('Confere se não tem espacio vazio');
+     alert('Nome  vazio');
      return false;
     }if(valor === ""){
-        alert('Confere se não tem espacio vazio');
+        alert('Valor vazio');
         return false;
     }if(data === ""){
-        alert('Confere se não tem espacio vazio');
+        alert('data vazio');
         return false;
     }else{
         return true;

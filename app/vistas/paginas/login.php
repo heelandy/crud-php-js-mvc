@@ -15,4 +15,6 @@
      </form>
 </div>
 
+
+
 <?php require RUTA_APP . '/vistas/inc/footer.php'; ?>
